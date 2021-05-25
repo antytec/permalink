@@ -19,7 +19,7 @@ class Permalink extends Model
      *
      * @var array
      */
-    public $fillable = ['parent_id', 'parent_for', 'entity_type', 'entity_id', 'slug', 'action', 'seo'];
+    public $fillable = ['tenant_id', 'parent_id', 'parent_for', 'entity_type', 'entity_id', 'slug', 'action', 'seo'];
 
     /**
      * Casting attributes.

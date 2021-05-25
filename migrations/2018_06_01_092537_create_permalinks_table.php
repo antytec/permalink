@@ -15,6 +15,7 @@ class CreatePermalinksTable extends Migration
     {
         Schema::create('permalinks', function (Blueprint $table) {
             $table->increments('id');
+            $table->foreignId('tenant_id')->constrained('tenants');
 
             $table->string('slug');
             $table->unsignedInteger('parent_id')->nullable();
